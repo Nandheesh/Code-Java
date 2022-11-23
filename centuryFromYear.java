@@ -7,7 +7,9 @@ Output2 : 18 century
 
 class Main(){
   public int centuryfromYear(int year){
-    if(year % 100 == 0) return year/100;
-    else return (year /100)+1;
+    int result = 0;
+    if(year % 100 == 0) result = year/100;
+    else result = (year /100)+1;
   }
+  return result;
 }

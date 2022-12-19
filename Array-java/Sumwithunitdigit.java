@@ -15,3 +15,24 @@ Example
 Input/Output 2: 
 Input: 8 9 79 80 71 59 55 18 69 68 
 Output: 207
+
+class solution {
+  public static void main(String[] argssssssssss){
+            Scanner num = new Scanner(System.in);
+            int N = 8 , X = 9;
+            int sum = 0;
+            int arr[] = new int[N];
+            for(int i = 0 ;i<N ;i++){
+                arr[i] = num.nextInt();
+            }
+            for(int i= 0 ;i< N ;i++){
+                if(arr[i] == X){
+                    sum += arr[i];
+                }
+                else if (arr[i] % 10 == X) {
+                    sum += arr[i];
+                }
+            }
+            System.out.println(sum);
+        }
+}
